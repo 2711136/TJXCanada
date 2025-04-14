@@ -2,11 +2,11 @@
 //  Absence.swift
 //  TJXCanada
 //
-//  Created by Bamba Loum on 2025-03-22.
+//  Created by Erick DONFACK on 2025-03-22.
 //
 
 import Foundation
-
+//Definition de la structure de données
 struct Absence: Identifiable, Codable, Hashable {
     var id: String = UUID().uuidString
     var reason: String
