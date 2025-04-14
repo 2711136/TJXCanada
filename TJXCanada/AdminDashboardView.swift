@@ -159,7 +159,7 @@ struct AdminDashboardView: View {
             }
         }
     }
-
+//Definition de la fonction
     func iconForRole(_ role: String) -> String {
         switch role {
         case "admin": return "person.crop.circle.badge.checkmark"
