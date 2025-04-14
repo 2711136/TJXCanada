@@ -16,7 +16,7 @@ struct AddUserView: View {
     @State private var email: String = "" // ✅ Email ajouté
     @State private var role: String = "employe"
 
-    let roles = ["employe", "manager", "admin"]
+    let roles = ["employe", "manager", "admin"] //type de role
     let firestore = FirestoreService()
 
     var body: some View {
