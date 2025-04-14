@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct TJXCanadaApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var firestoreService = FirestoreService()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
+
+                .environmentObject(firestoreService)
+                .onAppear {
+                    // ✅ Sûr que Firebase est initialisé ici
+                    firestoreService.addDefaultUsers()
+                }
         }
     }
 }

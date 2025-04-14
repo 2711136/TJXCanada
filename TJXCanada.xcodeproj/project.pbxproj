@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		887BCD8A2D8F5B7400528CBF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 887BCD892D8F5B7400528CBF /* FirebaseAnalytics */; };
+		887BCD8C2D8F5B7400528CBF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 887BCD8B2D8F5B7400528CBF /* FirebaseAuth */; };
+		887BCD8E2D8F5B7400528CBF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 887BCD8D2D8F5B7400528CBF /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		887BCD432D8F387000528CBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887BCD8A2D8F5B7400528CBF /* FirebaseAnalytics in Frameworks */,
+				887BCD8C2D8F5B7400528CBF /* FirebaseAuth in Frameworks */,
+				887BCD8E2D8F5B7400528CBF /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = TJXCanada;
 			packageProductDependencies = (
+				887BCD892D8F5B7400528CBF /* FirebaseAnalytics */,
+				887BCD8B2D8F5B7400528CBF /* FirebaseAuth */,
+				887BCD8D2D8F5B7400528CBF /* FirebaseFirestore */,
 			);
 			productName = TJXCanada;
 			productReference = 887BCD312D8F386F00528CBF /* TJXCanada.app */;
@@ -195,6 +207,9 @@
 			);
 			mainGroup = 887BCD282D8F386F00528CBF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				887BCD882D8F5B7400528CBF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 887BCD322D8F386F00528CBF /* Products */;
 			projectDirPath = "";
@@ -392,6 +407,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TJXCanada/Preview Content\"";
+				DEVELOPMENT_TEAM = PU9DP9FJPF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -429,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TJXCanada/Preview Content\"";
+				DEVELOPMENT_TEAM = PU9DP9FJPF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -583,6 +600,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		887BCD882D8F5B7400528CBF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		887BCD892D8F5B7400528CBF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 887BCD882D8F5B7400528CBF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		887BCD8B2D8F5B7400528CBF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 887BCD882D8F5B7400528CBF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		887BCD8D2D8F5B7400528CBF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 887BCD882D8F5B7400528CBF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 887BCD292D8F386F00528CBF /* Project object */;
 }
